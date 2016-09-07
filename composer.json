@@ -1,9 +1,9 @@
 {
-    "name": "marcw/blacklist-validator",
-    "description": "Blacklist validator for Symfony",
+    "name": "marcw/validator",
+    "description": "Extra validators for the Symfony Validator component",
     "type": "library",
     "require": {
-        "symfony/validator": "^3.1"
+        "symfony/validator": "^3.0"
     },
     "autoload": {
         "psr-4": { 
