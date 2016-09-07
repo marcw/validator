@@ -1,6 +1,9 @@
 # Validator
 
+[![Build Status](https://travis-ci.org/marcw/validator.svg?branch=master)](https://travis-ci.org/marcw/validator)
+
 Some additions to the [Validator Symfony Component](github.com/symfony/symfony).
+
 
 ## Subdomain validation
 
