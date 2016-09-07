@@ -24,12 +24,13 @@ validate if the value is equal to one of these terms.
 ## Example
 
 ```
+<?php
+
 namespace AppBundle\Entity;
 
 use MarcW\Validator\Constraint\Subdomain;
 use MarcW\Validator\Constraint\Username;
 
-<?php
 
 class User
 {
