@@ -1,6 +1,8 @@
 # Validator
 
 [![Build Status](https://travis-ci.org/marcw/validator.svg?branch=master)](https://travis-ci.org/marcw/validator)
+[![Coverage Status](https://coveralls.io/repos/github/marcw/validator/badge.svg?branch=master)](https://coveralls.io/github/marcw/validator?branch=master)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/75cf3a3f-a16d-4f05-a3e8-46b190b4daf5/mini.png)](https://insight.sensiolabs.com/projects/75cf3a3f-a16d-4f05-a3e8-46b190b4daf5)
 
 Some additions to the [Validator Symfony Component](github.com/symfony/symfony).
 
