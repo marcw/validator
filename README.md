@@ -28,7 +28,7 @@ validate if the value is equal to one of these terms.
 
 ## Example
 
-```
+```php
 <?php
 
 namespace AppBundle\Entity;
@@ -53,7 +53,9 @@ For more information, please read the [Symfony Validator component official docu
 
 ## Install
 
-`composer require marcw/validator`
+```
+composer require marcw/validator
+```
 
 ## Can I contribute?
 
@@ -61,5 +63,5 @@ Sure! Feel free to report issues, send pull-requests, or ask for help.
 
 ## LICENSE
 
-See the LICENSE file.
+See the [LICENSE](/LICENSE) file.
 
