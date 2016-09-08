@@ -51,7 +51,7 @@ class User
 
 ## Install
 
-`composer require marcw/rss-writer`
+`composer require marcw/validator`
 
 ## Can I contribute?
 
