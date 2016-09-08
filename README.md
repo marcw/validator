@@ -33,8 +33,8 @@ validate if the value is equal to one of these terms.
 
 namespace AppBundle\Entity;
 
-use MarcW\Validator\Constraint\Subdomain;
-use MarcW\Validator\Constraint\Username;
+use MarcW\Validator\Constraints\Subdomain;
+use MarcW\Validator\Constraints\Username;
 
 
 class User
@@ -48,6 +48,8 @@ class User
     private $username;
 }
 ```
+
+For more information, please read the [Symfony Validator component official documentation](http://symfony.com/doc/current/components/validator.html).
 
 ## Install
 
