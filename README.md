@@ -29,6 +29,10 @@ validate if the value is equal to one of these terms.
 
 Validate that a string matches the correct format for a Google Analytics Tracker ID.
 
+## HTMLColor validator
+
+Validate that a string matches the basic HTML format for a color (`#abc` or `#abcdef`)
+
 ## Example
 
 ```php
@@ -52,6 +56,11 @@ class User
      * @Assert\GoogleAnalytics
      */
     private $googleAnalytics;
+
+    /**
+     * @Assert\HTMLColor
+     */
+    private $backgroundColor;
 }
 ```
 
