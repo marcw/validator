@@ -6,7 +6,6 @@
 
 Some additions to the [Validator Symfony Component](github.com/symfony/symfony).
 
-
 ## Subdomain validation
 
 Validate a string value based on these rules:
@@ -26,6 +25,10 @@ Validate a string value based on [The Big Username
 Blacklist](https://github.com/marteinn/The-Big-Username-Blacklist). It won't
 validate if the value is equal to one of these terms.
 
+## GoogleAnalytics Tracker ID validation
+
+Validate that a string matches the correct format for a Google Analytics Tracker ID.
+
 ## Example
 
 ```php
@@ -33,19 +36,22 @@ validate if the value is equal to one of these terms.
 
 namespace AppBundle\Entity;
 
-use MarcW\Validator\Constraints\Subdomain;
-use MarcW\Validator\Constraints\Username;
-
+use MarcW\Validator\Constraints as Assert;
 
 class User
 {
     /**
      * The username is used to attribute a subdomain or a subfolder to the user like:
      * https://username.acme.com or https://acme.com/username
-     * @Subdomain
-     * @Username
+     * @Assert\Subdomain
+     * @Assert\Username
      */
     private $username;
+
+    /**
+     * @Assert\GoogleAnalytics
+     */
+    private $googleAnalytics;
 }
 ```
 
