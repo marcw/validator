@@ -29,6 +29,10 @@ validate if the value is equal to one of these terms.
 
 Validate that a string matches the correct format for a Google Analytics Tracker ID.
 
+## SMS Message Validation.
+
+Validate that a value fits in 1 SMS message.
+
 ## HTMLColor validator
 
 Validate that a string matches the basic HTML format for a color (`#abc` or `#abcdef`)
@@ -61,6 +65,16 @@ class User
      * @Assert\HTMLColor
      */
     private $backgroundColor;
+}
+
+class Message
+{
+    /**
+     * This value must fit in 2 SMS messages.
+     *
+     * @Assert\SmsMessage(max=2)
+     */
+    private $body;
 }
 ```
 
