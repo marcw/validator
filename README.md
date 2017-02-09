@@ -31,7 +31,7 @@ Validate that a string matches the correct format for a Google Analytics Tracker
 
 ## SMS Message Validation.
 
-Validate that a value fits in 1 SMS message.
+Validate that a value fits in one (or more) SMS message.
 
 ## HTMLColor validator
 
