@@ -4,13 +4,14 @@ namespace Tests\MarcW\Validator\Constraints;
 
 use MarcW\Validator\Constraints\GoogleAnalytics;
 use MarcW\Validator\Constraints\GoogleAnalyticsValidator;
-use Symfony\Component\Validator\Tests\Constraints\AbstractConstraintValidatorTest;
+use Symfony\Component\Validator\Test\A;
 use Symfony\Component\Validator\Constraints\NotNull;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Test\ConstraintValidatorTestCase;
 use Symfony\Component\Validator\Validation;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 
-class GoogleAnalyticsValidatorTest extends AbstractConstraintValidatorTest
+class GoogleAnalyticsValidatorTest extends ConstraintValidatorTestCase
 {
     public function createValidator()
     {

@@ -4,9 +4,10 @@ namespace Tests\MarcW\Validator\Constraints;
 
 use MarcW\Validator\Constraints\SmsMessage;
 use MarcW\Validator\Constraints\SmsMessageValidator;
+use Symfony\Component\Validator\Test\ConstraintValidatorTestCase;
 use Symfony\Component\Validator\Tests\Constraints\AbstractConstraintValidatorTest;
 
-class SmsMessageValidatorTest extends AbstractConstraintValidatorTest
+class SmsMessageValidatorTest extends ConstraintValidatorTestCase
 {
     protected function createValidator()
     {
