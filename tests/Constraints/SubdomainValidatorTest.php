@@ -5,11 +5,6 @@ namespace Tests\MarcW\Validator\Constraints;
 use MarcW\Validator\Constraints\Subdomain;
 use MarcW\Validator\Constraints\SubdomainValidator;
 use Symfony\Component\Validator\Test\ConstraintValidatorTestCase;
-use Symfony\Component\Validator\Tests\Constraints\AbstractConstraintValidatorTest;
-use Symfony\Component\Validator\Constraints\NotNull;
-use Symfony\Component\Validator\Constraints\NotBlank;
-use Symfony\Component\Validator\Validation;
-use Symfony\Component\Validator\Mapping\ClassMetadata;
 
 class SubdomainValidatorTest extends ConstraintValidatorTestCase
 {

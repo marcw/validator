@@ -5,7 +5,6 @@ namespace Tests\MarcW\Validator\Constraints;
 use MarcW\Validator\Constraints\Username;
 use MarcW\Validator\Constraints\UsernameValidator;
 use Symfony\Component\Validator\Test\ConstraintValidatorTestCase;
-use Symfony\Component\Validator\Tests\Constraints\AbstractConstraintValidatorTest;
 
 class UsernameValidatorTest extends ConstraintValidatorTestCase
 {
