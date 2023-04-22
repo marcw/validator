@@ -20,6 +20,10 @@ class UsernameValidator extends ConstraintValidator
             static::$list = require_once(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'Resources'.DIRECTORY_SEPARATOR.'blacklist.php');
         }
 
+        if (null === $value) {
+            return;
+        }
+
         if (in_array(strtolower($value), static::$list)) {
             $this->context->buildViolation($constraint->message)
                 ->setCode(Username::IS_BLACKLISTED_ERROR)
