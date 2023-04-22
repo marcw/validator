@@ -17,7 +17,7 @@ class UsernameValidator extends ConstraintValidator
     public function validate($value, Constraint $constraint)
     {
         if (empty(static::$list)) {
-            static::$list = require_once(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'Resources'.DIRECTORY_SEPARATOR.'blacklist.php');
+            static::$list = require_once(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'Resources'.DIRECTORY_SEPARATOR.'blocklist.php');
         }
 
         if (null === $value) {
@@ -26,7 +26,7 @@ class UsernameValidator extends ConstraintValidator
 
         if (in_array(strtolower($value), static::$list)) {
             $this->context->buildViolation($constraint->message)
-                ->setCode(Username::IS_BLACKLISTED_ERROR)
+                ->setCode(Username::IS_BLOCKLISTED_ERROR)
                 ->addViolation();
 
             return;

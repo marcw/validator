@@ -22,7 +22,7 @@ Validate a string value based on these rules:
 ## Username validation
 
 Validate a string value based on [The Big Username
-Blacklist](https://github.com/marteinn/The-Big-Username-Blacklist). It won't
+Blocklist](https://github.com/marteinn/The-Big-Username-Blocklist). It won't
 validate if the value is equal to one of these terms.
 
 ## GoogleAnalytics Tracker ID validation

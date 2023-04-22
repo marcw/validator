@@ -25,19 +25,19 @@ class UsernameValidatorTest extends ConstraintValidatorTestCase
         $this->assertNoViolation();
     }
 
-    public function testNonBlacklistedIsValid()
+    public function testNonBlocklistedIsValid()
     {
         $this->validator->validate("marc", new Username());
         $this->assertNoViolation();
     }
 
-    public function testBlacklistedIsInvalid()
+    public function testBlocklistedIsInvalid()
     {
         $value = 'admin';
         $this->validator->validate($value, new Username());
 
         $this->buildViolation('This value is not available')
-            ->setCode(Username::IS_BLACKLISTED_ERROR)
+            ->setCode(Username::IS_BLOCKLISTED_ERROR)
             ->assertRaised();
     }
 }
